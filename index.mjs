@@ -15,9 +15,7 @@ function init() {}
 // function call to initialize program
 // init();
 
-// ***PSEUDO CODES***
 // inquirer for user's input
-// inquirer
 let {
   title,
   description,
@@ -65,6 +63,7 @@ let {
     message: "Select the application's license",
     choices: [
       { name: "MIT", value: "mit" },
+      { name: "Apache 2.0 License", value: "apache" },
       { name: "Mozilla Public License 2.0", value: "mozilla" },
     ],
   },
@@ -82,6 +81,7 @@ let {
 
 // Sets the README file contents
 let readmeDocument = `# ${title}  
+
 ## Description
 ${description}  
 ## Table of Contents
@@ -105,16 +105,30 @@ ${tests}
 ${renderQuestions(githubUsername, emailAddress)}
 `;
 
+// renders Questions section in the README file
 function renderQuestions(githubUsername, emailAddress) {
-  let questionsText = `For questions, issues or suggestions, please feel free to contact me on my GitHub, or drop me an email!  
+  let questionsText = `For questions, issues or suggestions, please feel free to reach me on my GitHub, or drop me an email!  
     - GitHub: https://github.com/${githubUsername}  
     - Email Address: ${emailAddress}
 `;
-
   return questionsText;
 }
 
-function displayBadges() {}
+// reference to badges URL for licenses
+const licenseBadges = [
+  {
+    mit: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+  },
+  {
+    apache: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
+  },
+  {
+    mozilla: `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
+  },
+];
+
+// displays badges
+function displayBadges(license) {}
 
 fs.writeFile("./sample/README.md", readmeDocument);
 // console.log("success!");
