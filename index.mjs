@@ -74,8 +74,20 @@ const licenseBadges = {
 };
 
 // displays badges
-function displayBadges(license) {
+function displayBadge(license) {
   return licenseBadges[license[0]];
+}
+
+// reference to full names of licenses
+const licenseNames = {
+  mit: "MIT License",
+  apache: "Apache 2.0 License",
+  mozilla: "Mozilla Public License 2.0"
+}
+
+// displays full names of licenses
+function displayLicenseName(license) {
+  return licenseNames[license[0]];
 }
 
 // renders Questions section in the README file
@@ -88,7 +100,7 @@ function renderQuestions(githubUsername, emailAddress) {
 
 // the README file output text
 let readmeDocument = `# ${title}  
-${displayBadges(license)}
+${displayBadge(license)}
 ## Description
 ${description}  
 ## Table of Contents
@@ -103,7 +115,7 @@ ${installation}
 ## Usage
 ${usage}
 ## License
-The ${title} is under the ${license}.
+The ${title} is under the ${displayLicenseName(license)}.
 ## Contributing
 ${contribution}
 ## Tests
