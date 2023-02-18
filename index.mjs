@@ -74,9 +74,7 @@ const licenseBadges = {
 };
 
 // displays badges
-function displayBadge(license) {
-  return licenseBadges[license[0]];
-}
+const displayBadge = license => licenseBadges[license[0]];
 
 // reference to full names of licenses
 const licenseNames = {
@@ -86,12 +84,10 @@ const licenseNames = {
 }
 
 // displays full names of licenses
-function displayLicenseName(license) {
-  return licenseNames[license[0]];
-}
+const displayLicenseName = license => licenseNames[license[0]];
 
 // renders Questions section in the README file
-function renderQuestions(githubUsername, emailAddress) {
+const renderQuestions = (githubUsername, emailAddress) => {
   let questionsText = ` - GitHub Profile: https://github.com/${githubUsername}  
   - Email: ${emailAddress}  
   For questions, issues or suggestions regarding this project, please feel free to drop me an email!`;
