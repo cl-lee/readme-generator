@@ -3,6 +3,7 @@ import fs from "fs/promises";
 // const path = require('path');
 // const generateMarkdown = require("./utils/generateMarkdown");
 
+
 // array of questions for user
 const questions = [];
 
@@ -17,8 +18,8 @@ function init() {}
 
 // inquirer for user's input
 let {
-  title,
-  description,
+    title,
+    description,
   installation,
   usage,
   contribution,
@@ -27,7 +28,7 @@ let {
   githubUsername,
   emailAddress,
 } = await inquirer.prompt([
-  {
+    {
     type: "input",
     name: "title",
     message: "What is the project's title?",
@@ -41,7 +42,7 @@ let {
     type: "input",
     name: "installation",
     message: "Please enter the installation instructions",
-  },
+},
   {
     type: "input",
     name: "usage",
@@ -53,7 +54,7 @@ let {
     message: "Please enter the contribution guidelines",
   },
   {
-    type: "input",
+      type: "input",
     name: "tests",
     message: "Please enter the test instructions",
   },
@@ -66,10 +67,10 @@ let {
       { name: "Apache 2.0 License", value: "apache" },
       { name: "Mozilla Public License 2.0", value: "mozilla" },
     ],
-  },
+},
   {
-    type: "input",
-    name: "githubUsername",
+      type: "input",
+      name: "githubUsername",
     message: "Please enter the your GitHub username (for contact)",
   },
   {
@@ -79,9 +80,16 @@ let {
   },
 ]);
 
+// reference to badges URL for licenses
+const licenseBadges = {
+  mit: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+  apache: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
+  mozilla: `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
+};
+
 // Sets the README file contents
 let readmeDocument = `# ${title}  
-
+${displayBadges(license)}
 ## Description
 ${description}  
 ## Table of Contents
@@ -110,27 +118,14 @@ function renderQuestions(githubUsername, emailAddress) {
   let questionsText = `For questions, issues or suggestions, please feel free to reach me on my GitHub, or drop me an email!  
     - GitHub: https://github.com/${githubUsername}  
     - Email Address: ${emailAddress}
-`;
-  return questionsText;
+    `;
+    return questionsText;
 }
 
-// reference to badges URL for licenses
-const licenseBadges = [
-  {
-    mit: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
-  },
-  {
-    apache: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
-  },
-  {
-    mozilla: `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
-  },
-];
-
 // displays badges
-function displayBadges(license) {}
+function displayBadges(license) {
+    return licenseBadges[license[0]];
+}
 
 fs.writeFile("./sample/README.md", readmeDocument);
 // console.log("success!");
-
-// record screen for this app's readme!

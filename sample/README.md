@@ -1,6 +1,7 @@
-# adf  
+#   
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-asf  
+  
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -9,17 +10,17 @@ asf
 - [Tests](#Tests)
 - [Questions](#Questions)
 ## Installation
-adf  
+  
 ## Usage
-asdf
-## License
-mit,mozilla
-## Contributing
-asdf
-## Tests
-asdf
-## Questions
-For questions, issues or suggestions, please feel free to contact me on my GitHub, or drop me an email!  
-    - GitHub: https://github.com/asd  
-    - Email Address: cl.leeo.ofz@gmail.com
 
+## License
+mit
+## Contributing
+
+## Tests
+
+## Questions
+For questions, issues or suggestions, please feel free to reach me on my GitHub, or drop me an email!  
+    - GitHub: https://github.com/  
+    - Email Address: 
+    
