@@ -117,7 +117,7 @@ ${renderQuestions(githubUsername, emailAddress)}
 function renderQuestions(githubUsername, emailAddress) {
   let questionsText = `For questions, issues or suggestions, please feel free to reach me on my GitHub, or drop me an email!  
     - GitHub: https://github.com/${githubUsername}  
-    - Email Address: ${emailAddress}
+    - Email: ${emailAddress}
     `;
     return questionsText;
 }
