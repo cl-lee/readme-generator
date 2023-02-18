@@ -121,4 +121,4 @@ ${renderQuestions(githubUsername, emailAddress)}
 `;
 
 // --- Generates output to README file ---
-fs.writeFile("./sample/README.md", readmeDocument);
+fs.writeFile("./output/README.md", readmeDocument);

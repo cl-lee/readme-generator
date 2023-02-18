@@ -1,16 +1,18 @@
-# A Sample Project  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# README Generator  
 ## Description
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id neque aliquam vestibulum morbi.   
-## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+A tool for developers. This project features a README file generator for project creators. Using a command-line application, developers can easily create a README file by just entering the details about their projects.
+
+## Prerequisites
+- **Node.js** is required to run the application
+
 ## Installation
-Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Volutpat odio facilisis mauris sit amet. Maecenas accumsan lacus vel facilisis volutpat est. Lectus nulla at volutpat diam ut venenatis tellus in metus.  
+1. Clone the repository ([A guide to cloning repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository))
+   Repo link: `https://github.com/cl-lee/readme-generator.git`
+   
+2. Install the Inquirer package
+    `npm install inquirer`
+
+
 ## Usage
 Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Placerat orci nulla pellentesque dignissim enim sit amet. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
 ## License
@@ -23,3 +25,6 @@ Sed pulvinar proin gravida hendrerit. Pellentesque id nibh tortor id aliquet lec
  - GitHub Profile: https://github.com/cl-lee  
   - Email: cl.lee.ofz@gmail.com  
   For questions, issues or suggestions regarding this project, please feel free to drop me an email!
+
+## Acknowledgements
+https://github.com/othneildrew/Best-README-Template
