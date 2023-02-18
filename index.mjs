@@ -63,7 +63,7 @@ let {
     name: "license",
     message: "Select the application's license",
     choices: [
-      { name: "MIT", value: "mit" },
+      { name: "MIT License", value: "mit" },
       { name: "Apache 2.0 License", value: "apache" },
       { name: "Mozilla Public License 2.0", value: "mozilla" },
     ],
@@ -104,7 +104,7 @@ ${installation}
 ## Usage
 ${usage}
 ## License
-${license}
+The ${title} is under the ${license}.
 ## Contributing
 ${contribution}
 ## Tests
