@@ -1,7 +1,7 @@
-# test  
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+#   
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-test  
+  
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -10,17 +10,16 @@ test
 - [Tests](#Tests)
 - [Questions](#Questions)
 ## Installation
-test  
+  
 ## Usage
-test
+
 ## License
-The test is under the mozilla.
+The  is under the mit.
 ## Contributing
-tes
+
 ## Tests
-test
+
 ## Questions
-For questions, issues or suggestions, please feel free to reach me on my GitHub, or drop me an email!  
-    - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): https://github.com/test  
-    - Email Address: test
-    
+ - GitHub Profile: https://github.com/sdf  
+    - Email: sdf  
+    For questions, issues or suggestions regarding this project, please feel free to drop me an email!
