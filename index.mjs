@@ -111,7 +111,7 @@ ${installation}
 ## Usage
 ${usage}
 ## License
-The ${title} is under the ${displayLicenseName(license)}.
+The ${title} is licensed under the ${displayLicenseName(license)}.
 ## Contributing
 ${contribution}
 ## Tests
