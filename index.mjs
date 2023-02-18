@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
-// inquirer for user's input
+// --- Inquirer for user input ---
 let {
   title,
   description,
@@ -65,14 +65,28 @@ let {
   },
 ]);
 
-// reference to badges URL for licenses
+// --- Sets the README file contents ---
+// reference to license badges URL
 const licenseBadges = {
   mit: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
   apache: `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
   mozilla: `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
 };
 
-// Sets the README file contents
+// displays badges
+function displayBadges(license) {
+  return licenseBadges[license[0]];
+}
+
+// renders Questions section in the README file
+function renderQuestions(githubUsername, emailAddress) {
+  let questionsText = ` - GitHub Profile: https://github.com/${githubUsername}  
+  - Email: ${emailAddress}  
+  For questions, issues or suggestions regarding this project, please feel free to drop me an email!`;
+  return questionsText;
+}
+
+// the README file output text
 let readmeDocument = `# ${title}  
 ${displayBadges(license)}
 ## Description
@@ -98,18 +112,5 @@ ${tests}
 ${renderQuestions(githubUsername, emailAddress)}
 `;
 
-// renders Questions section in the README file
-function renderQuestions(githubUsername, emailAddress) {
-  let questionsText = ` - GitHub Profile: https://github.com/${githubUsername}  
-  - Email: ${emailAddress}  
-  For questions, issues or suggestions regarding this project, please feel free to drop me an email!`;
-  return questionsText;
-}
-
-// displays badges
-function displayBadges(license) {
-  return licenseBadges[license[0]];
-}
-
+// --- Generates output to README file ---
 fs.writeFile("./sample/README.md", readmeDocument);
-// console.log("success!");
