@@ -7,9 +7,9 @@ A tool for developers. This project features a README file generator for project
 - **Node.js** is required to run the application
 
 ### Installation
-1. **Clone the repository** ([A guide to cloning repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository))
+1. **Clone the repository** ([A guide to cloning repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository))  
    Repo link: `https://github.com/cl-lee/readme-generator.git`
-2. **Install the Inquirer package**
+2. **Install the Inquirer package**  
     `npm install inquirer`
 
 ## Usage
