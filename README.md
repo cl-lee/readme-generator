@@ -2,29 +2,38 @@
 ## Description
 A tool for developers. This project features a README file generator for project creators. Using a command-line application, developers can easily create a README file by just entering the details about their projects.
 
-## Prerequisites
+## Getting Started
+### Prerequisites
 - **Node.js** is required to run the application
 
-## Installation
-1. Clone the repository ([A guide to cloning repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository))
+### Installation
+1. **Clone the repository** ([A guide to cloning repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository))
    Repo link: `https://github.com/cl-lee/readme-generator.git`
-   
-2. Install the Inquirer package
+2. **Install the Inquirer package**
     `npm install inquirer`
 
-
 ## Usage
-Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Placerat orci nulla pellentesque dignissim enim sit amet. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
-## License
-The A Sample Project is under the MIT License.
-## Contributing
-Felis donec et odio pellentesque. Quisque id diam vel quam. Morbi tincidunt ornare massa eget.
-## Tests
-Sed pulvinar proin gravida hendrerit. Pellentesque id nibh tortor id aliquet lectus proin nibh.
-## Questions
- - GitHub Profile: https://github.com/cl-lee  
-  - Email: cl.lee.ofz@gmail.com  
-  For questions, issues or suggestions regarding this project, please feel free to drop me an email!
+- To begin using the application, open a command-line application and go into the *readme-generator* folder cloned from GitHub
+
+### 1. Run the node.mjs file
+`node index.mjs`
+![Run the index.mjs file](./assets/1-indexmjs.gif)  
+
+### 2. Enter the project information
+![Enter project information](./assets/2-project-info.gif)
+
+### 3. Select the license used
+![Select the license used](./assets/3-select-license.gif)
+
+### 4. Enter contact information (for display in the Questions section)
+![Enter contact information](./assets/4-contact-details.gif)
+
+### 5. Output
+The output can be found in the "output" folder inside the cloned "readme-generator" folder
+![Locate the output file](./assets/5-output.gif)
+
+## Contact
+Project Link: https://github.com/cl-lee/readme-generator
 
 ## Acknowledgements
-https://github.com/othneildrew/Best-README-Template
+[Markdown License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
