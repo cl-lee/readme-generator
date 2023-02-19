@@ -19,29 +19,10 @@ A tool for developers. This project features a README file generator for project
 
 ## Usage
 
-- To begin using the application, open a command-line application and go into the _readme-generator_ folder cloned from GitHub
+1. To begin using the application, open a command-line application and go into the _readme-generator_ folder cloned from GitHub
 
-### 1. Run the node.mjs file
-
-Enter command: `node index.mjs`  
-![Run the index.mjs file](./assets/1-indexmjs.gif)
-
-### 2. Enter the project information
-
-![Enter project information](./assets/2-project-info.gif)
-
-### 3. Select the license used
-
-![Select the license used](./assets/3-select-license.gif)
-
-### 4. Enter contact information (for display in the Questions section)
-
-![Enter contact information](./assets/4-contact-details.gif)
-
-### 5. Output
-
-The output can be found in the "output" folder inside the cloned "readme-generator" folder
-![Locate the output file](./assets/5-output.gif)
+2. The following video demonstrates how to run the application
+[![App video walkthrough](./assets/video-screen.png)](https://youtu.be/SR_rTu7E4Ek "Video walkthrough of the application")
 
 ## Contact
 
