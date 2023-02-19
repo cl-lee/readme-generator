@@ -16,7 +16,7 @@ A tool for developers. This project features a README file generator for project
 - To begin using the application, open a command-line application and go into the *readme-generator* folder cloned from GitHub
 
 ### 1. Run the node.mjs file
-`node index.mjs`
+Enter command: `node index.mjs`  
 ![Run the index.mjs file](./assets/1-indexmjs.gif)  
 
 ### 2. Enter the project information
