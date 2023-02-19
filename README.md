@@ -22,7 +22,7 @@ A tool for developers. This project features a README file generator for project
 1. To begin using the application, open a command-line application and go into the _readme-generator_ folder cloned from GitHub
 
 2. The following video demonstrates how to run the application
-[![App video walkthrough](./assets/video-screen.png)](https://youtu.be/SR_rTu7E4Ek "Video walkthrough of the application")
+[![App video walkthrough](./assets/video-screen.png)](https://youtu.be/SR_rTu7E4Ek "Click on the video to start playing")
 
 ## Contact
 
